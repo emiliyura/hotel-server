@@ -12,4 +12,4 @@ public class HotelServerApplication {
     public static void main(String[] args) {
         SpringApplication.run(HotelServerApplication.class, args);
     }
-} // последний комит
+} // пйоследний комит
