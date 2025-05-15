@@ -14,4 +14,8 @@ public class BookingService {
     public Booking createBooking(Booking booking) {
         return bookingRepository.save(booking);
     }
+
+    public java.util.List<Booking> getBookingsByUsername(String username) {
+        return bookingRepository.findAllByUsername(username);
+    }
 } 

@@ -27,4 +27,9 @@ public class BookingController {
         Booking savedBooking = bookingService.createBooking(booking);
         return ResponseEntity.ok(savedBooking);
     }
+
+    @GetMapping
+    public java.util.List<Booking> getBookingsByUsername(@RequestParam String username) {
+        return bookingService.getBookingsByUsername(username);
+    }
 } 
