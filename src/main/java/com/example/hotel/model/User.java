@@ -21,6 +21,9 @@ public class User {
     @Column(nullable = false)
     private String email;
 
+    @Column(nullable = false)
+    private String role = "user";
+
     // Геттеры
     public Long getId() {
         return id;
@@ -38,6 +41,10 @@ public class User {
         return email;
     }
 
+    public String getRole() {
+        return role;
+    }
+
     // Сеттеры
     public void setId(Long id) {
         this.id = id;
@@ -53,5 +60,9 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
     }
 } 
